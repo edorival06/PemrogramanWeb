@@ -1,28 +1,38 @@
 <?php
 session_start();
-// cek apakah ada username
+//cek apakah ada username
 if(isset($_SESSION['username'])){
     header('Location:admin.php');
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Page</title>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!-- pastikan action menuju ke auth.php dan method POST/post -->
-    <form action="index_no_db.php" method="POST">
-    <label for="username">Username</label>
-    <input name="username" type="text" />
-    <br />
-    <label for="password">Pasword</label>
-    <input name="password" type="password" />
-    <br />
-    <input type="submit" name="submit" value="Login">
-</form>
+
+<h1>Halaman Login <br/>Silahkan Isi</h1>
+ 
+	<div class="kotak_login">
+		<p class="tulisan_login">Silahkan login</p>
+ 
+		<form action="index.php" method="POST">
+			<label>Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Username atau email .."/>
+ 
+			<label>Password</label>
+			<input type="password" name="password" class="form_login" placeholder="Password .."/>
+ 
+			<button name="submit" class="tombol_login" value="LOGIN">Login</button>
+ 
+			<br/>
+			<br/>
+			
+		</form>
+		
+	</div>
+
 </body>
 </html>

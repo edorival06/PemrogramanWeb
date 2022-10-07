@@ -1,4 +1,5 @@
 <?php
+session_start();
 // memebuat database / isiskan dengan nama kamu
 $database = [
     'username' => 'edo',
@@ -19,7 +20,7 @@ if(isset($_POST['submit'])){
         header("location:admin.php");
     } else {
         // memunculkan pemberitahuan gagal login dan redirect ke login page
-        echo '<sript> alert("Username atau password salah!");
+        echo '<script> alert("Username atau password salah!");
         window.location="login-page.php"; </script>';
     }
 } else {
