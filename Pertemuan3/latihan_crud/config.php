@@ -1,11 +1,14 @@
 <?php
+
 $db_hostname = 'localhost';
-$db_name = 'elektro_store_edo';
-$db_username = 'root';
+$db_user = 'root';
 $db_password = '';
+$db_name = 'elektro_store';
 
-$conn_db = mysqli_connect($db_hostname, $db_username, $db_password, $db_name);
+$conn_db = mysqli_connect($db_hostname,$db_user,$db_password,$db_name);
 
-if(!$conn_db) {
-    die("Connection Failed : " . mysqli_connect_error());
+if(!$conn_db){
+    die("CONNECTION FAILED : " . mysqli_connect_error());
 }
+
+?>
