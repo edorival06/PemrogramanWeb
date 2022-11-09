@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+// $database = [
+//     'username' => 'edo',
+//     'password' => 'ytta06'
+// ];
+
 $username = $_POST['username'];
 
 include_once('config.php');

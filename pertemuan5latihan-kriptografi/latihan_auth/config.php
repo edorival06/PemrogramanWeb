@@ -1,7 +1,7 @@
 <?php
 
 $db_hostname = 'localhost';
-$db_name = 'belajar_kriptografi';
+$db_name = 'belajar_kriptografi_edo';
 $db_username = 'root';
 $db_password = '';
 
