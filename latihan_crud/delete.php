@@ -3,7 +3,7 @@ include_once("config.php");
 
 $id = $_GET['id'];
 
-$result = mysqli_query($conn_db, "DELETE FROM customer WHERE id=$id");
+$result = mysqli_query($conn_db, "DELETE FROM customers WHERE id=$id");
 if ($result){
     $message = "Berhasil menghapus customer";
 } else {
